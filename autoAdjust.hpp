@@ -5,6 +5,9 @@
 #ifdef _WIN32
 #include <windows.h>
 #else
+#ifdef __FreeBSD__
+#include <cstdio>
+#endif // __FreeBSD__
 #include <unistd.h>
 #endif // _WIN32
 
